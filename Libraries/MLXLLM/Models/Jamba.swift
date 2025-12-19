@@ -222,7 +222,7 @@ private class JambaMambaMixer: Module {
             kernelSize: self.convKernelSize,
             padding: 0,
             groups: self.intermediateSize,
-            bias: self.useConvBias,
+            bias: self.useConvBias
         )
 
         _xProj.wrappedValue = Linear(
