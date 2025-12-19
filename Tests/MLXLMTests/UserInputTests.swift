@@ -1,7 +1,6 @@
 import Foundation
 import MLX
 import MLXLMCommon
-import MLXVLM
 import XCTest
 
 func assertEqual(
