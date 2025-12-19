@@ -11,9 +11,6 @@ let package = Package(
             name: "MLXLLM",
             targets: ["MLXLLM"]),
         .library(
-            name: "MLXVLM",
-            targets: ["MLXVLM"]),
-        .library(
             name: "MLXLMCommon",
             targets: ["MLXLMCommon"]),
         .library(
@@ -47,25 +44,7 @@ let package = Package(
                 .enableExperimentalFeature("StrictConcurrency")
             ]
         ),
-        .target(
-            name: "MLXVLM",
-            dependencies: [
-                "MLXLMCommon",
-                .product(name: "MLX", package: "mlx-swift"),
-                .product(name: "MLXFast", package: "mlx-swift"),
-                .product(name: "MLXNN", package: "mlx-swift"),
-                .product(name: "MLXOptimizers", package: "mlx-swift"),
-                .product(name: "MLXRandom", package: "mlx-swift"),
-                .product(name: "Transformers", package: "swift-transformers"),
-            ],
-            path: "Libraries/MLXVLM",
-            exclude: [
-                "README.md"
-            ],
-            swiftSettings: [
-                .enableExperimentalFeature("StrictConcurrency")
-            ]
-        ),
+      
         .target(
             name: "MLXLMCommon",
             dependencies: [
