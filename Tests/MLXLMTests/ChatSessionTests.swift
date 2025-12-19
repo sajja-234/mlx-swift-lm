@@ -7,7 +7,6 @@ import MLXLLM
 import MLXLMCommon
 import MLXNN
 import MLXOptimizers
-import MLXVLM
 import Tokenizers
 import XCTest
 
