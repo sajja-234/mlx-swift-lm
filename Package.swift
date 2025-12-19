@@ -73,7 +73,6 @@ let package = Package(
                 .product(name: "Transformers", package: "swift-transformers"),
                 "MLXLMCommon",
                 "MLXLLM",
-                "MLXVLM",
             ],
             path: "Tests/MLXLMTests",
             exclude: [
